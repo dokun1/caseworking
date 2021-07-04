@@ -11,7 +11,7 @@ import SwiftUI
 struct CaseWorkingApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+          ContentView(children: try! Helpers.getMockChildren())
         }
     }
 }
