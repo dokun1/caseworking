@@ -27,7 +27,7 @@ struct Helpers {
     do {
       let data = try Data(contentsOf: url)
       let children = try self.decoder.decode([Child].self, from: data)
-      return children
+      return children.sorted { $0.lastName < $1.lastName }
     } catch let exception {
       print(exception)
       throw(HelperError.couldNotDecodeMockData)

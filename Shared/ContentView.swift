@@ -8,8 +8,17 @@
 import SwiftUI
 
 struct ContentView: View {
-  @State var searchText = ""
+  @State private var searchText = ""
   @State var children: [Child]
+  
+  private func filterChildren(searchTerm: String) {
+    if !searchTerm.isEmpty {
+      children = try! Helpers.getMockChildren().filter { $0.firstName.contains(searchTerm) || $0.lastName.contains(searchTerm) }
+    } else {
+      children = try! Helpers.getMockChildren()
+    }
+  }
+  
   var body: some View {
     NavigationView {
       List(children) { child in
@@ -20,14 +29,8 @@ struct ContentView: View {
         }).isDetailLink(true)
       }.listStyle(InsetGroupedListStyle())
         .navigationBarTitle("Children")
-        .searchable(text: $searchText)
-        .onChange(of: searchText) { searchText in
-          if !searchText.isEmpty {
-            children = try! Helpers.getMockChildren().filter { $0.firstName.contains(searchText) || $0.lastName.contains(searchText) }
-          } else {
-            children = try! Helpers.getMockChildren()
-          }
-        }
+        .searchable("Search by name...", text: $searchText)
+        .onChange(of: searchText, perform: filterChildren)
     }
   }
 }
