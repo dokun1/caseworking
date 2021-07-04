@@ -19,11 +19,19 @@ struct Child: Identifiable {
   var risks: [RiskFlag]?
   var avatar: Data?
   var avatarURL: URL?
+  var contactDetails: ContactDetails?
   
   var currentLocation: Location? {
     locationHistory.sorted {
       $0.lastUpdated.compare($1.lastUpdated) == .orderedDescending
     }.first
+  }
+  
+  var formattedAddress: String {
+    guard let location = self.currentLocation else { return "" }
+    return """
+      \(location.addressLineOne)\n\(location.city), \(location.state) \(location.zipcode)
+      """
   }
   
   var listDOB: String {

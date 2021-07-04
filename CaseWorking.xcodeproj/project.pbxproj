@@ -3,10 +3,12 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 52;
+	objectVersion = 50;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		50A6147F268926E5004534A0 /* ChildAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50A6147E268926E5004534A0 /* ChildAPI.swift */; };
+		50A61480268926E5004534A0 /* ChildAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50A6147E268926E5004534A0 /* ChildAPI.swift */; };
 		50BF97F2266D7783009AC2ED /* ChildDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50BF97F1266D7783009AC2ED /* ChildDetailView.swift */; };
 		50BF97F3266D7783009AC2ED /* ChildDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50BF97F1266D7783009AC2ED /* ChildDetailView.swift */; };
 		50D7A3F6266D57FB00CB840C /* Tests_iOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50D7A3F5266D57FB00CB840C /* Tests_iOS.swift */; };
@@ -25,13 +27,24 @@
 		50D7A420266D5C0700CB840C /* RiskFlags.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50D7A41E266D5C0700CB840C /* RiskFlags.swift */; };
 		50D7A422266D5CF800CB840C /* Note.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50D7A421266D5CF800CB840C /* Note.swift */; };
 		50D7A423266D5CF800CB840C /* Note.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50D7A421266D5CF800CB840C /* Note.swift */; };
-		50D7A426266D5DC600CB840C /* SDWebImageSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = 50D7A425266D5DC600CB840C /* SDWebImageSwiftUI */; };
 		50D7A429266D633F00CB840C /* ChildCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50D7A428266D633F00CB840C /* ChildCell.swift */; };
 		50D7A42A266D633F00CB840C /* ChildCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50D7A428266D633F00CB840C /* ChildCell.swift */; };
 		50D7A42F266D642A00CB840C /* ListAvatar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50D7A42E266D642A00CB840C /* ListAvatar.swift */; };
 		50D7A430266D642A00CB840C /* ListAvatar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50D7A42E266D642A00CB840C /* ListAvatar.swift */; };
 		50D7A432266D653B00CB840C /* DevHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50D7A431266D653B00CB840C /* DevHelpers.swift */; };
 		50D7A433266D653B00CB840C /* DevHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50D7A431266D653B00CB840C /* DevHelpers.swift */; };
+		50E7EFB626923EF300952DF7 /* RiskFlagListRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50E7EFB526923EF300952DF7 /* RiskFlagListRow.swift */; };
+		50E7EFB726923EF300952DF7 /* RiskFlagListRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50E7EFB526923EF300952DF7 /* RiskFlagListRow.swift */; };
+		50E7EFB9269243BA00952DF7 /* RiskFlagDisplay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50E7EFB8269243BA00952DF7 /* RiskFlagDisplay.swift */; };
+		50E7EFBA269243BA00952DF7 /* RiskFlagDisplay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50E7EFB8269243BA00952DF7 /* RiskFlagDisplay.swift */; };
+		50E7EFC026924C4500952DF7 /* RiskFlagSelectionMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50E7EFBF26924C4500952DF7 /* RiskFlagSelectionMenu.swift */; };
+		50E7EFC126924C4500952DF7 /* RiskFlagSelectionMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50E7EFBF26924C4500952DF7 /* RiskFlagSelectionMenu.swift */; };
+		50E7EFC326924CB800952DF7 /* ChildDetailList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50E7EFC226924CB800952DF7 /* ChildDetailList.swift */; };
+		50E7EFC426924CB800952DF7 /* ChildDetailList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50E7EFC226924CB800952DF7 /* ChildDetailList.swift */; };
+		50E7EFC626924E5C00952DF7 /* ContactDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50E7EFC526924E5C00952DF7 /* ContactDetails.swift */; };
+		50E7EFC726924E5C00952DF7 /* ContactDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50E7EFC526924E5C00952DF7 /* ContactDetails.swift */; };
+		50E7EFC92692520700952DF7 /* ChildContactDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50E7EFC82692520700952DF7 /* ChildContactDetailsView.swift */; };
+		50E7EFCA2692520700952DF7 /* ChildContactDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50E7EFC82692520700952DF7 /* ChildContactDetailsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +65,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		50A6147E268926E5004534A0 /* ChildAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChildAPI.swift; sourceTree = "<group>"; };
 		50BF97F1266D7783009AC2ED /* ChildDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChildDetailView.swift; sourceTree = "<group>"; };
 		50D7A3DA266D57F900CB840C /* CaseWorkingApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaseWorkingApp.swift; sourceTree = "<group>"; };
 		50D7A3DB266D57F900CB840C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -74,6 +88,12 @@
 		50D7A428266D633F00CB840C /* ChildCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChildCell.swift; sourceTree = "<group>"; };
 		50D7A42E266D642A00CB840C /* ListAvatar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListAvatar.swift; sourceTree = "<group>"; };
 		50D7A431266D653B00CB840C /* DevHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DevHelpers.swift; sourceTree = "<group>"; };
+		50E7EFB526923EF300952DF7 /* RiskFlagListRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RiskFlagListRow.swift; sourceTree = "<group>"; };
+		50E7EFB8269243BA00952DF7 /* RiskFlagDisplay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RiskFlagDisplay.swift; sourceTree = "<group>"; };
+		50E7EFBF26924C4500952DF7 /* RiskFlagSelectionMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RiskFlagSelectionMenu.swift; sourceTree = "<group>"; };
+		50E7EFC226924CB800952DF7 /* ChildDetailList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChildDetailList.swift; sourceTree = "<group>"; };
+		50E7EFC526924E5C00952DF7 /* ContactDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactDetails.swift; sourceTree = "<group>"; };
+		50E7EFC82692520700952DF7 /* ChildContactDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChildContactDetailsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,7 +101,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				50D7A426266D5DC600CB840C /* SDWebImageSwiftUI in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -109,6 +128,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		50A6147D268926C8004534A0 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				50A6147E268926E5004534A0 /* ChildAPI.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		50BF97F4266D7F99009AC2ED /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		50D7A3D4266D57F800CB840C = {
 			isa = PBXGroup;
 			children = (
@@ -118,12 +152,14 @@
 				50D7A3F4266D57FB00CB840C /* Tests iOS */,
 				50D7A3FF266D57FB00CB840C /* Tests macOS */,
 				50D7A3E2266D57FB00CB840C /* Products */,
+				50BF97F4266D7F99009AC2ED /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
 		50D7A3D9266D57F900CB840C /* Shared */ = {
 			isa = PBXGroup;
 			children = (
+				50A6147D268926C8004534A0 /* API */,
 				50D7A3DA266D57F900CB840C /* CaseWorkingApp.swift */,
 				50D7A3DB266D57F900CB840C /* ContentView.swift */,
 				50D7A431266D653B00CB840C /* DevHelpers.swift */,
@@ -185,6 +221,7 @@
 			children = (
 				50D7A418266D5A9200CB840C /* Child.swift */,
 				50D7A41B266D5B2400CB840C /* Location.swift */,
+				50E7EFC526924E5C00952DF7 /* ContactDetails.swift */,
 				50D7A41E266D5C0700CB840C /* RiskFlags.swift */,
 				50D7A421266D5CF800CB840C /* Note.swift */,
 			);
@@ -212,9 +249,22 @@
 		50D7A42C266D636500CB840C /* ChildDetail */ = {
 			isa = PBXGroup;
 			children = (
+				50E7EFBE26924C3600952DF7 /* RiskFlag */,
 				50BF97F1266D7783009AC2ED /* ChildDetailView.swift */,
+				50E7EFC226924CB800952DF7 /* ChildDetailList.swift */,
+				50E7EFC82692520700952DF7 /* ChildContactDetailsView.swift */,
+				50E7EFB526923EF300952DF7 /* RiskFlagListRow.swift */,
+				50E7EFB8269243BA00952DF7 /* RiskFlagDisplay.swift */,
 			);
 			path = ChildDetail;
+			sourceTree = "<group>";
+		};
+		50E7EFBE26924C3600952DF7 /* RiskFlag */ = {
+			isa = PBXGroup;
+			children = (
+				50E7EFBF26924C4500952DF7 /* RiskFlagSelectionMenu.swift */,
+			);
+			path = RiskFlag;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -234,7 +284,6 @@
 			);
 			name = "CaseWorking (iOS)";
 			packageProductDependencies = (
-				50D7A425266D5DC600CB840C /* SDWebImageSwiftUI */,
 			);
 			productName = "CaseWorking (iOS)";
 			productReference = 50D7A3E1266D57FB00CB840C /* CaseWorking.app */;
@@ -253,6 +302,8 @@
 			dependencies = (
 			);
 			name = "CaseWorking (macOS)";
+			packageProductDependencies = (
+			);
 			productName = "CaseWorking (macOS)";
 			productReference = 50D7A3E9266D57FB00CB840C /* CaseWorking.app */;
 			productType = "com.apple.product-type.application";
@@ -328,7 +379,6 @@
 			);
 			mainGroup = 50D7A3D4266D57F800CB840C;
 			packageReferences = (
-				50D7A424266D5DC600CB840C /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */,
 			);
 			productRefGroup = 50D7A3E2266D57FB00CB840C /* Products */;
 			projectDirPath = "";
@@ -381,15 +431,22 @@
 			buildActionMask = 2147483647;
 			files = (
 				50BF97F2266D7783009AC2ED /* ChildDetailView.swift in Sources */,
+				50E7EFC626924E5C00952DF7 /* ContactDetails.swift in Sources */,
 				50D7A405266D57FB00CB840C /* ContentView.swift in Sources */,
+				50E7EFB9269243BA00952DF7 /* RiskFlagDisplay.swift in Sources */,
 				50D7A422266D5CF800CB840C /* Note.swift in Sources */,
+				50E7EFB626923EF300952DF7 /* RiskFlagListRow.swift in Sources */,
 				50D7A403266D57FB00CB840C /* CaseWorkingApp.swift in Sources */,
 				50D7A432266D653B00CB840C /* DevHelpers.swift in Sources */,
 				50D7A429266D633F00CB840C /* ChildCell.swift in Sources */,
 				50D7A41C266D5B2400CB840C /* Location.swift in Sources */,
 				50D7A41F266D5C0700CB840C /* RiskFlags.swift in Sources */,
+				50E7EFC026924C4500952DF7 /* RiskFlagSelectionMenu.swift in Sources */,
+				50E7EFC92692520700952DF7 /* ChildContactDetailsView.swift in Sources */,
+				50A6147F268926E5004534A0 /* ChildAPI.swift in Sources */,
 				50D7A42F266D642A00CB840C /* ListAvatar.swift in Sources */,
 				50D7A419266D5A9200CB840C /* Child.swift in Sources */,
+				50E7EFC326924CB800952DF7 /* ChildDetailList.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -398,15 +455,22 @@
 			buildActionMask = 2147483647;
 			files = (
 				50BF97F3266D7783009AC2ED /* ChildDetailView.swift in Sources */,
+				50E7EFC726924E5C00952DF7 /* ContactDetails.swift in Sources */,
 				50D7A406266D57FB00CB840C /* ContentView.swift in Sources */,
+				50E7EFBA269243BA00952DF7 /* RiskFlagDisplay.swift in Sources */,
 				50D7A423266D5CF800CB840C /* Note.swift in Sources */,
+				50E7EFB726923EF300952DF7 /* RiskFlagListRow.swift in Sources */,
 				50D7A404266D57FB00CB840C /* CaseWorkingApp.swift in Sources */,
 				50D7A433266D653B00CB840C /* DevHelpers.swift in Sources */,
 				50D7A42A266D633F00CB840C /* ChildCell.swift in Sources */,
 				50D7A41D266D5B2400CB840C /* Location.swift in Sources */,
 				50D7A420266D5C0700CB840C /* RiskFlags.swift in Sources */,
+				50E7EFC126924C4500952DF7 /* RiskFlagSelectionMenu.swift in Sources */,
+				50E7EFCA2692520700952DF7 /* ChildContactDetailsView.swift in Sources */,
+				50A61480268926E5004534A0 /* ChildAPI.swift in Sources */,
 				50D7A430266D642A00CB840C /* ListAvatar.swift in Sources */,
 				50D7A41A266D5A9200CB840C /* Child.swift in Sources */,
+				50E7EFC426924CB800952DF7 /* ChildDetailList.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -562,7 +626,7 @@
 				DEVELOPMENT_TEAM = RQ632LL2X3;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = iOS/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -584,7 +648,7 @@
 				DEVELOPMENT_TEAM = RQ632LL2X3;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = iOS/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -784,25 +848,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCRemoteSwiftPackageReference section */
-		50D7A424266D5DC600CB840C /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/SDWebImage/SDWebImageSwiftUI";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 2.0.2;
-			};
-		};
-/* End XCRemoteSwiftPackageReference section */
-
-/* Begin XCSwiftPackageProductDependency section */
-		50D7A425266D5DC600CB840C /* SDWebImageSwiftUI */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 50D7A424266D5DC600CB840C /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */;
-			productName = SDWebImageSwiftUI;
-		};
-/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 50D7A3D5266D57F800CB840C /* Project object */;
 }

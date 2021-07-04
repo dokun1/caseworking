@@ -6,7 +6,6 @@
 //
 
 import SwiftUI
-import SDWebImageSwiftUI
 
 struct ListAvatar: View {
   
@@ -23,12 +22,12 @@ struct ListAvatar: View {
   }
   
   var body: some View {
-    WebImage(url: cellURL)
-      .resizable()
-      .indicator(.activity)
-      .animation(.default)
-      .aspectRatio(contentMode: .fill)
-      .frame(width: 100, height: 100)
+    AsyncImage(url: cellURL) { image in
+      image.resizable()
+    } placeholder: {
+      Color.blue
+//      ProgressView().progressViewStyle(CircularProgressViewStyle()).frame(width: 100, height: 100)
+    }.frame(width: 100, height: 100)
       .clipShape(Circle())
       .overlay(Circle().stroke(Color.black, lineWidth: 4))
       .padding()

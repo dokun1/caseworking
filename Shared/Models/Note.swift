@@ -7,8 +7,14 @@
 
 import Foundation
 
-struct Note {
+struct Note: Identifiable {
   var id: UUID
   var dateTaken: Date
   var body: String
+  
+  var formattedDate: String {
+    let formatter = DateFormatter()
+    formatter.dateFormat = "MM-dd-yyyy HH:MM:ss"
+    return formatter.string(from: dateTaken)
+  }
 }

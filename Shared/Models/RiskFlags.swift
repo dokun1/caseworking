@@ -6,8 +6,22 @@
 //
 
 import Foundation
+import SwiftUI
 
-enum RiskFlag: String {
+enum RiskFlag: String, CaseIterable {
+  case none = "None Listed"
   case selfHarm = "Self Harm Risk"
-  case addiction = "Addiction"
+  case substanceAbuse = "Substance Abuse"
+  case unauthorizedPlacement = "Unauthorized Placement"
+  case aggressiveBehavior = "Aggressive Behavior"
+  
+  var color: Color {
+    switch self {
+      case .selfHarm: return .red
+      case .substanceAbuse: return .blue
+      case .unauthorizedPlacement: return .yellow
+      case .aggressiveBehavior: return .green
+      default: return .black
+    }
+  }
 }
