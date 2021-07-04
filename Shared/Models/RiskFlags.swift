@@ -8,7 +8,7 @@
 import Foundation
 import SwiftUI
 
-enum RiskFlag: String, CaseIterable {
+enum RiskFlag: String, CaseIterable, Codable {
   case none = "None Listed"
   case selfHarm = "Self Harm Risk"
   case substanceAbuse = "Substance Abuse"

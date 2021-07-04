@@ -25,6 +25,19 @@
 		<key>UIApplicationSupportsMultipleScenes</key>
 		<true/>
 	</dict>
+	<key>NSAppTransportSecurity</key>
+	<dict>
+		<key>NSExceptionDomains</key>
+		<dict>
+			<key>dummyimage.com</key>
+			<dict>
+				<key>NSExceptionAllowsInsecureHTTPLoads</key>
+				<true/>
+			</dict>
+		</dict>
+		<key>NSAllowsArbitraryLoadsUsageDescription</key>
+		<dict/>
+	</dict>
 	<key>UIApplicationSupportsIndirectInputEvents</key>
 	<true/>
 	<key>UILaunchScreen</key>

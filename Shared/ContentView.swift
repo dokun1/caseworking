@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct ContentView: View {
-  var mockItems = [Helpers.mockChild1, Helpers.mockChild2, Helpers.mockChild3]
+  var mockItems = try! Helpers.getMockChildren()
   var body: some View {
     NavigationView {
       List(mockItems) { child in

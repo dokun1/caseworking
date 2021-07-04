@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct Child: Identifiable {
+struct Child: Identifiable, Codable {
   var id: UUID
   var medicaidID: String
   var caseID: String
@@ -19,7 +19,11 @@ struct Child: Identifiable {
   var risks: [RiskFlag]?
   var avatar: Data?
   var avatarURL: URL?
-  var contactDetails: ContactDetails?
+
+  var phoneNumbers: [String]?
+  var emailAddresses: [String]?
+  var emergencyContactName: String?
+  var emergencyContactNumber: String?
   
   var currentLocation: Location? {
     locationHistory.sorted {

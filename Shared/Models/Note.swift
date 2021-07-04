@@ -7,9 +7,10 @@
 
 import Foundation
 
-struct Note: Identifiable {
+struct Note: Identifiable, Codable {
   var id: UUID
   var dateTaken: Date
+  
   var body: String
   
   var formattedDate: String {

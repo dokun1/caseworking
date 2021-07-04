@@ -26,6 +26,6 @@ struct ChildCell: View {
 
 struct ChildCell_Previews: PreviewProvider {
   static var previews: some View {
-    ChildCell(child: Helpers.mockChild3).previewDevice("iPhone 12")
+    ChildCell(child: try! Helpers.getRandomMockChild()).previewDevice("iPhone 12")
   }
 }

@@ -43,7 +43,8 @@ struct ChildDetailList: View {
 }
 
 struct ChildDetailList_Previews: PreviewProvider {
+  
   static var previews: some View {
-    ChildDetailList(child: Helpers.mockChild1)
+    ChildDetailList(child: try! Helpers.getRandomMockChild())
   }
 }

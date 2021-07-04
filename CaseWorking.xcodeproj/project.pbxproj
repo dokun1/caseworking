@@ -41,10 +41,10 @@
 		50E7EFC126924C4500952DF7 /* RiskFlagSelectionMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50E7EFBF26924C4500952DF7 /* RiskFlagSelectionMenu.swift */; };
 		50E7EFC326924CB800952DF7 /* ChildDetailList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50E7EFC226924CB800952DF7 /* ChildDetailList.swift */; };
 		50E7EFC426924CB800952DF7 /* ChildDetailList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50E7EFC226924CB800952DF7 /* ChildDetailList.swift */; };
-		50E7EFC626924E5C00952DF7 /* ContactDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50E7EFC526924E5C00952DF7 /* ContactDetails.swift */; };
-		50E7EFC726924E5C00952DF7 /* ContactDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50E7EFC526924E5C00952DF7 /* ContactDetails.swift */; };
 		50E7EFC92692520700952DF7 /* ChildContactDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50E7EFC82692520700952DF7 /* ChildContactDetailsView.swift */; };
 		50E7EFCA2692520700952DF7 /* ChildContactDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50E7EFC82692520700952DF7 /* ChildContactDetailsView.swift */; };
+		50E7EFCC2692775100952DF7 /* MockData.json in Resources */ = {isa = PBXBuildFile; fileRef = 50E7EFCB2692775100952DF7 /* MockData.json */; };
+		50E7EFCD2692775100952DF7 /* MockData.json in Resources */ = {isa = PBXBuildFile; fileRef = 50E7EFCB2692775100952DF7 /* MockData.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -92,8 +92,8 @@
 		50E7EFB8269243BA00952DF7 /* RiskFlagDisplay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RiskFlagDisplay.swift; sourceTree = "<group>"; };
 		50E7EFBF26924C4500952DF7 /* RiskFlagSelectionMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RiskFlagSelectionMenu.swift; sourceTree = "<group>"; };
 		50E7EFC226924CB800952DF7 /* ChildDetailList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChildDetailList.swift; sourceTree = "<group>"; };
-		50E7EFC526924E5C00952DF7 /* ContactDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactDetails.swift; sourceTree = "<group>"; };
 		50E7EFC82692520700952DF7 /* ChildContactDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChildContactDetailsView.swift; sourceTree = "<group>"; };
+		50E7EFCB2692775100952DF7 /* MockData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = MockData.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -159,6 +159,7 @@
 		50D7A3D9266D57F900CB840C /* Shared */ = {
 			isa = PBXGroup;
 			children = (
+				50E7EFCB2692775100952DF7 /* MockData.json */,
 				50A6147D268926C8004534A0 /* API */,
 				50D7A3DA266D57F900CB840C /* CaseWorkingApp.swift */,
 				50D7A3DB266D57F900CB840C /* ContentView.swift */,
@@ -221,7 +222,6 @@
 			children = (
 				50D7A418266D5A9200CB840C /* Child.swift */,
 				50D7A41B266D5B2400CB840C /* Location.swift */,
-				50E7EFC526924E5C00952DF7 /* ContactDetails.swift */,
 				50D7A41E266D5C0700CB840C /* RiskFlags.swift */,
 				50D7A421266D5CF800CB840C /* Note.swift */,
 			);
@@ -398,6 +398,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				50D7A407266D57FB00CB840C /* Assets.xcassets in Resources */,
+				50E7EFCC2692775100952DF7 /* MockData.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -406,6 +407,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				50D7A408266D57FB00CB840C /* Assets.xcassets in Resources */,
+				50E7EFCD2692775100952DF7 /* MockData.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -431,7 +433,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				50BF97F2266D7783009AC2ED /* ChildDetailView.swift in Sources */,
-				50E7EFC626924E5C00952DF7 /* ContactDetails.swift in Sources */,
 				50D7A405266D57FB00CB840C /* ContentView.swift in Sources */,
 				50E7EFB9269243BA00952DF7 /* RiskFlagDisplay.swift in Sources */,
 				50D7A422266D5CF800CB840C /* Note.swift in Sources */,
@@ -455,7 +456,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				50BF97F3266D7783009AC2ED /* ChildDetailView.swift in Sources */,
-				50E7EFC726924E5C00952DF7 /* ContactDetails.swift in Sources */,
 				50D7A406266D57FB00CB840C /* ContentView.swift in Sources */,
 				50E7EFBA269243BA00952DF7 /* RiskFlagDisplay.swift in Sources */,
 				50D7A423266D5CF800CB840C /* Note.swift in Sources */,

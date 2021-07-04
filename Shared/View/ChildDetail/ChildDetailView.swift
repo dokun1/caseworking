@@ -13,13 +13,12 @@ struct ChildDetailView: View {
   var body: some View {
     NavigationView {
       ChildDetailList(child: child)
-        .navigationTitle(child.firstName + " " + child.lastName)
-    }
+    }.navigationTitle(child.firstName + " " + child.lastName)
   }
 }
 
 struct ChildDetailView_Previews: PreviewProvider {
   static var previews: some View {
-    ChildDetailView(child: Helpers.mockChild1).previewDevice("iPhone 12 Pro Max")
+    ChildDetailView(child: try! Helpers.getRandomMockChild()).previewDevice("iPhone 12 Pro Max")
   }
 }

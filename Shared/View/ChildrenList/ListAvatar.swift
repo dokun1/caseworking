@@ -37,8 +37,7 @@ struct ListAvatar: View {
 struct ListAvatar_Previews: PreviewProvider {
   static var previews: some View {
     ListAvatar(imageData: nil,
-               imageURL: Helpers
-                  .avatarSampleURL1)
+               imageURL: try! Helpers.getRandomMockChild().avatarURL)
       .previewDevice("iPhone 12")
   }
 }

@@ -8,7 +8,7 @@
 import Foundation
 import CoreLocation
 
-struct Location {
+struct Location: Codable {
   var lastUpdated: Date
   var addressLineOne: String
   var addressLineTwo: String?
@@ -16,5 +16,6 @@ struct Location {
   var city: String
   var state: String
   var zipcode: String
-  var coordinates: CLLocationCoordinate2D?
+  var latitude: Double?
+  var longitude: Double?
 }
