@@ -11,9 +11,8 @@ struct ChildDetailView: View {
   var child: Child
   
   var body: some View {
-    NavigationView {
-      ChildDetailList(child: child)
-    }.navigationTitle(child.firstName + " " + child.lastName)
+    ChildDetailList(child: child)
+      .navigationTitle(child.firstName + " " + child.lastName)    
   }
 }
 
